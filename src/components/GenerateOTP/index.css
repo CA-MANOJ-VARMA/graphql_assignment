@@ -1,0 +1,72 @@
+.css-LoginPage-whole-Container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+
+.css-generate-otp-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.css-choose-container{
+    padding: 0;
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-input-div-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.css-choose-button-itself{
+    width: 140px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+input{
+    border-radius: 5px;
+    border-width: 1px;
+    width: 350px;
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .css-choose-container,.css-LoginPage-whole-Container{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .css-choose-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .css-LoginPage-whole-Container{
+        padding: 10px;
+    }
+}

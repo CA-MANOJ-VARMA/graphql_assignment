@@ -1,0 +1,21 @@
+
+.css-change-container{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.css-userspage-container{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    min-height: 100vh;
+    min-width: 95vw;
+}
+
+.table-responsive{
+    padding: 10px;
+    margin-top: 60px;
+    max-height: 480px;
+}
+

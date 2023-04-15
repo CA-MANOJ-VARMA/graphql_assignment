@@ -68,3 +68,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<ul className='css-ul-container'>
+<li key={eachUser.id}>
+  <div className='css-card-container' >
+      <div className='css-organisation-container'>
+        <h3>Organisation Details</h3>
+        {eachUser.organization===null?(<p>Doesn't Exist</p>):(
+          <>
+          <p>Organisation : {eachUser.organization.name}</p>
+          <p>Organisation Code: {eachUser.organization.code}</p>
+        <p>UID : {eachUser.organization.uid}</p>
+        <p>Status : {eachUser.organization.status}</p>
+        {/* <Link href={`eachUser.organization.website`}>{eachUser.organization.website}</Link> */}
+        </>
+        )}
+
+      </div>
+      {/* <div className='css-restItems-card-container'>
+        <h3>User Details</h3>
+        <p>FirstName : {eachUser.firstName}</p>
+          <p>LastName:{eachUser.lastName}</p>
+        <p>Email: {eachUser.email}</p>
+        <p>Phone: {eachUser.phone}</p>
+      </div> */}
+
+  </div>
+  
+  
+</li>
+</ul>
