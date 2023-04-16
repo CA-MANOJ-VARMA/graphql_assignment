@@ -63,7 +63,7 @@ Run the Command `npm install`. This will install all the dependencies used in th
 
 Run `npm start` will start the server.
 
-To use the Website go through this [PDF](https://scribehow.com/shared/Step_by_Step_Procedure_on_How_to_Navigate_through_the_Project__-xmxVfaaSPyGAmuZUv4W0Q) or go through Below Step by Step Prcess
+To go through the project go through this [PDF](https://scribehow.com/shared/Step_by_Step_Procedure_on_How_to_Navigate_through_the_Project__-xmxVfaaSPyGAmuZUv4W0Q) or go through Below Step by Step Process
 
 Step 1: Click the [Link](https://graphqlassignment.netlify.app/) to go to the Website or `locahost`.
 
