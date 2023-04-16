@@ -3,7 +3,25 @@
 
 This project was created using React, Bootstrap, GraphQL. Deployed at this [Link](https://graphqlassignment.netlify.app/).
 
-## Available Scripts
+## How to Use this Website
+
+Step 1: Click the Above Link to go to the Website.
+
+Step 2: Choose either Email or Phone Number.  [Lets say 'Email is Chosen'].
+
+Step 3: Enter the Valid Email and Click 'Generate OTP' button.
+
+Step 4: After Clicking the button the website will verify whether the given email Address is Valid or Not.If it is valid an OTP is shown in the page with a link to Login page. If the Entered email is not valid it show an error message.
+
+Step 5: Remember the OTP and Click the 'Click to Login' you will be directed to Login Page.
+
+
+
+
+After Clicking the Link you will encounter the home page where you have to choose between EMAIL or PHONE NUMBER to GENERATE OTP.
+Lets Say we Chose EMAIL.
+New Component appears where you need to enter VALID Email Address and Click 'Generate OTP' button
+
 
 In the project directory, you can run:
 
