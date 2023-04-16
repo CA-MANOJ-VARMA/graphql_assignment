@@ -83,4 +83,6 @@ Step 7: If the OTP Entered is correct you will be redirected to  `users` page el
 
 To Look into My Other Project GoTo - [Link](https://github.com/CA-MANOJ-VARMA?tab=repositories)
 
+My Resume - [Link](https://drive.google.com/file/d/1KfZB24Q-ArvcnhKjEtsL5t3zZXEyCVkH/view?usp=share_link)
+
 
