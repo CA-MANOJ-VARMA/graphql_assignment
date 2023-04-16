@@ -1,7 +1,7 @@
 # React Assignment
 ## Assignment: User Listing and Filter Component
 
-This project was created using React, Bootstrap, GraphQL. Deployed at this Link(https://graphqlassignment.netlify.app/).
+This project was created using React, Bootstrap, GraphQL. Deployed at this [Link](https://graphqlassignment.netlify.app/).
 
 ## Available Scripts
 
