@@ -31,7 +31,7 @@ const GenerateOTP = (props) => {
     }
 
     const inputFieldFunction = (event)=>{
-        console.log(event.target.value)
+        // console.log(event.target.value)
         if (event.target.valie!==''){
             setError(false)
         }
@@ -40,8 +40,8 @@ const GenerateOTP = (props) => {
 
     const formSubmitFunction = async(event) =>{
         event.preventDefault()
-        console.log(event.target.name)
-        localStorage.getItem('emailOrPhone',event.target.name)
+        // console.log(event.target.name)
+        localStorage.setItem('emailOrPhone',event.target.name)
         if (inputField==='') {
             return setError(true)
         }
@@ -53,7 +53,7 @@ const GenerateOTP = (props) => {
         const variables ={
             emailOrPhone:inputField
         }
-        console.log(variables)
+        // console.log(variables)
 
         if (event.target.name==="email"){
             mutation1 = `mutation($emailOrPhone:NullString!){
@@ -66,7 +66,7 @@ const GenerateOTP = (props) => {
             }`
         }   
 
-        console.log(mutation1)
+        // console.log(mutation1)
         const options={
             method:'POST',
             headers : {
@@ -88,17 +88,19 @@ const GenerateOTP = (props) => {
         setOtp(parseInt(generateOTP))
         localStorage.setItem('otp',generateOTP)
         localStorage.setItem('inputField',inputField)
-        console.log(generateOTP)
+        // console.log(generateOTP)
         
     }   
 
     const routeLoginPage = () =>{
        const {history} = props
-        console.log(history)
+        // console.log(history)
         history.replace('/login')
         window.location.reload();
         
     } 
+
+    // console.log(typeof otp)
 
   return (
     <div className='css-LoginPage-whole-Container'>
@@ -143,17 +145,29 @@ const GenerateOTP = (props) => {
             </form>)
         }
 
-        {typeof(otp)==='number' &&<div className='css-OTP-container'>
+        {/* {typeof(otp)==='number' &&<div className='css-OTP-container'>
             <h4>Your OTP is {otp}</h4>
                 <button  className='btn btn-link'
             onClick={routeLoginPage}
             >Click Here Login</button>
            
         </div>
-}
-        {typeof(otp)==='string' && <div className='css-OTP-container'>    
+} */}
+        {typeof(otp)==='string' ? (
+        
+        <div className='css-OTP-container'>    
             <h4> {otp}</h4>
         </div>
+        ):
+        (
+            <div className='css-OTP-container'>
+            <h4>Your OTP is {otp}</h4>
+                <button  className='btn btn-link'
+            onClick={routeLoginPage}
+            >Click Here Login</button>
+           
+        </div>  
+        )
         }
     </div>
   )

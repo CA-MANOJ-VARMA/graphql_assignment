@@ -51,7 +51,7 @@ const ListOfUsers = (props) => {
           offsetQuery:offset,
           limitQuery:limit
       }
-      console.log(variables)
+      // console.log(variables)
 
       const options={
           method:'POST',
@@ -78,16 +78,6 @@ const ListOfUsers = (props) => {
   }
   ,[searchInput,option,limit, offset])
 
-  // let limitOffsetLength = []
-  console.log(typeof fetchedData)
-  // if (fetchedData!==""){
-    
-  //   for(let i=0;i<fetchedData.length+1;i++){
-  //     limitOffsetLength.push(i)
-  //   }
-  //   // console.log(limitOffsetLength)
-  // } 
-
   // console.log(limitOffsetLength)
 
   const searchFunction = (event) =>{
@@ -97,7 +87,7 @@ const ListOfUsers = (props) => {
 
 
   const changeFuntion  = (event) =>{
-    console.log(event.target.name)
+    // console.log(event.target.name)
     if (event.target.name==="sortby"){
       setOption(event.target.value)
     }
@@ -119,7 +109,7 @@ const ListOfUsers = (props) => {
     window.location.reload();
   }
 
-  console.log(fetchedData)
+  // console.log(fetchedData)
   return (
     <div className='css-userspage-container'>
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top css-navbar-property">

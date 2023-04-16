@@ -36,12 +36,12 @@ const LoginPage = (props) => {
                  }
               }`
         }
-
+        // console.log(mutation1)
         const variables ={
             emailOrPhone:inputField,
             otp:otpInput
         }
-        console.log(variables)
+        // console.log(variables)
 
         const options={
             method:'POST',
@@ -55,10 +55,9 @@ const LoginPage = (props) => {
         const response = await fetch(baseurl,options)
         
         const jsonData = await response.json()
-        localStorage.setItem('sessionToken',"28da10d6-8d2d-42a6-bc96-8dcfd2f93b45")
-        console.log(jsonData)
+    
         const {sessionToken} = await jsonData.data.login
-        console.log(sessionToken)
+        // console.log(sessionToken)
         localStorage.setItem('sessionToken',sessionToken)
 
     }
@@ -68,9 +67,9 @@ const LoginPage = (props) => {
         if (OTPStored===otpInput){
             callApiFunction()
             history.replace('/users')
-            // setTimeout(function(){
-            //     window.location.reload();
-            //  }, 1500);
+            setTimeout(function(){
+                window.location.reload();
+             }, 1000);
         }else {
             localStorage.removeItem('otp')
             localStorage.removeItem('inputField')
@@ -105,11 +104,6 @@ const LoginPage = (props) => {
             <button className='btn btn-success' >Login</button>
             </div>
             {wrongOtp && <h5>Entered wrongOtp Redirecting to <span style={{'color':'red','fontWeight':'bold'}}>Generate OTP Page</span> Page in <span style={{'color':'red'}}>4</span> seconds...</h5>}
-            {/* {inputField===null && (
-            <>
-            </>
-            )
-            } */}
         </form>
         </div>
   )
